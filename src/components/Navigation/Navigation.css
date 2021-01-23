@@ -1,0 +1,29 @@
+.nav-container {
+    display: flex;
+    height: 50px;
+    background-color: rgb(250, 226, 198);
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.nav-container__link {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 10px 0 10px 0px;
+}
+
+.nav-container__link:hover {
+    opacity: .8;
+}
+
+.nav-container__link:active {
+    opacity: .7;
+}

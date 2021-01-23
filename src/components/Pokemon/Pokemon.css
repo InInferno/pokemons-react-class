@@ -1,0 +1,147 @@
+.container-single {
+    width: 100%;
+    display: flex;
+    margin: 20px auto 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media (max-width: 859px) {
+    .container-single {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+.single-card {
+    display: flex;
+    align-items: center;
+    width: 73%;
+    height: 100%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px 0px rgba(34, 60, 80, 0.31);
+    padding-bottom: 20px;
+    margin: 0 2% 0 7%;
+}
+
+@media (max-width: 1023px) {
+    .single-card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 859px) {
+    .single-card {
+        margin-bottom: 5%;
+    }
+}
+
+.single-card__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 834px) {
+    .single-card__container {
+        width: 100%;
+    }
+}
+
+.single-card__name {
+    font-size: 1.5em;
+    margin: 20px auto 0 auto;
+}
+
+.single-card__image {
+    width: 100%;
+}
+
+@media (max-width: 834px) {
+    .single-card__image {
+        width: 70%;
+    }
+}
+
+.single-card__text {
+    width: 50%;
+    text-align: center;
+    margin: 10px auto 0 auto;
+    border: 2px solid #ccc;
+}
+
+@media (max-width: 949px) {
+    .single-card__text {
+        width: 50%;
+    }
+}
+
+@media (max-width: 579px) {
+    .single-card__text {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 439px) {
+    .single-card__text {
+        width: 70%;
+    }
+}
+
+.single-card__text-item {
+    margin: 0;
+    margin: 5px auto 0 auto;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+.single-card__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 5px auto 10px auto;
+    list-style-type: none;
+    border: 1px solid #ccc;
+    width: 35%;
+}
+
+/* .single-card__list-item {
+
+} */
+
+.single-card__list-text {
+    margin: 0 auto 0 auto;
+}
+
+.preloader {
+	display: block;
+  width: 74px;
+  height: 74px;
+  border: 1px solid #444;
+  border-bottom-color: #888;
+  border-radius: 50%;
+  animation: spin .75s infinite linear;
+  margin: 79px 0px 22px 16px
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.error-block {
+    width: 100%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vh;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    background-color: rgb(221, 15, 15);
+}
