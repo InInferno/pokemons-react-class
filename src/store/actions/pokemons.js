@@ -23,7 +23,6 @@ export function pokemonsFetchData(url) {
                 return res.json()
             })
             .then(pokemons => {
-                console.log('action pokemons.js', pokemons)
                 dispatch(pokemonsDataSuccess(pokemons))
             })
             .finally(pokemons => {
@@ -48,7 +47,6 @@ export function pokemonFetchData(url) {
                 return res.json()
             })
             .then(pokemon => {
-                console.log('action pokemonFetchData pokemon.js', pokemon)
                 dispatch(pokemonDataSuccess(pokemon))
             })
             .finally(pokemon => {
@@ -73,8 +71,6 @@ export function pokemonsListFetchData(url) {
                 return res.json()
             })
             .then(pokemons => {
-                console.log('action pokemonsListFetchData pokemons.js', pokemons)
-                console.log(typeof(pokemons))
                 dispatch(pokemonsListDataSuccess(pokemons))
             })
             .finally(pokemons => {

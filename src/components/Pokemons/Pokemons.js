@@ -45,7 +45,6 @@ class Pokemons extends Component {
   }
 
   pokemonsListIsOpen = () => {
-    console.log(typeof(this.props.listIsOpenBoolean))
     this.props.listIsOpen();
   }
   
